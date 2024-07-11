@@ -10,10 +10,10 @@ app.use(express.json())
 app.use(cors())
 
 // Controllers
-// const roomsController = require("./controllers/roomsController")
+const roomsController = require("./controllers/roomsController")
 // const dinosaursController = require("./controllers/dinosaursController")
 
-// app.use("/rooms", roomsController)
+app.use("/rooms", roomsController)
 // app.use("/dinosaurs", dinosaursController)
 
 // Root/Health Check Route
