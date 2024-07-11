@@ -18,7 +18,7 @@ roomsRouter.get("/", (req, res) => {
 // Show Route
 roomsRouter.get("/:id", (req, res) => {
     const { id } = req.params
-    const room = roomArray.find((roomArray) => roomArray.id === id)
+    const room = roomArray.find((roomArray) => roomArray.roomId === id)
     if (room) {
             res.status(200).send(room)
     } else {
